@@ -2,7 +2,7 @@
 
 #include "mystring.h"
 
-static MyString add(MyString a, MyString b)
+static MyString add(const MyString a, const MyString b)
 {
     MyString t(" and ");
     return a + t + b;

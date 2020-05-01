@@ -1,3 +1,8 @@
+  - Steven Liu
+  - xl2948
+  - lab9
+
+Part1:
 (a)
 
 [1] 13,constructor,x
@@ -28,9 +33,13 @@
 
 (b)
 [3][4][20][21] are not shown after changing the add() function. Since the
-parameters are references to a and b, no temporary objects are
-constructed/deconstructed.
+parameters are references to a and b, no temporary objects are constructed/destructed.
 
 (c)
 It allows an implementation to omit creating a temporary which is only used to initialize another object of the same type.
-Temporary objects are not created
+The temporary objects (i.e., the uN objects) returned by add() are not
+constructed/destructed.
+
+Part2:
+(a) Works as required.
+(b) Works as required.
