@@ -1,5 +1,5 @@
 CC  = g++
-CXX = g++ -O0 -fno-elide-constructors
+CXX = g++ -O0
 
 # Comment out one of the following 2 lines to enable/disable BASIC4TRACE.
 INCLUDES = -DBASIC4TRACE
@@ -11,8 +11,8 @@ CXXFLAGS = -g -Wall $(INCLUDES)
 LDFLAGS = -g
 LDLIBS  =
 
-executables = test1 test2 test3 test4
-objects = mystring.o test1.o test2.o test3.o test4.o
+executables = test1 test2 test3 test4 test5
+objects = mystring.o test1.o test2.o test3.o test4.o test5.o
 
 .PHONY: default
 default: $(executables)

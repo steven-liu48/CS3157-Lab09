@@ -27,8 +27,10 @@ class MyString {
 	// returns the length of the string
 	int length() const { return len; }
 	
+	
 	// operator+
-	friend MyString operator+(const MyString& s1, const MyString& s2);
+	//friend MyString operator+(const MyString& s1, const MyString& s2);
+	
 
 	// put-to operator
 	friend ostream& operator<<(ostream& os, const MyString& s);
@@ -41,6 +43,28 @@ class MyString {
 
 	// operator[] const
 	const char& operator[](int i) const;
+	
+	// operator <
+	friend int operator<(const MyString& s1, const MyString& s2);
+
+	// operator >
+	friend int operator>(const MyString& s1, const MyString& s2);
+
+	// operator ==
+	friend int operator==(const MyString& s1, const MyString& s2);
+
+	// operator !=
+	friend int operator!=(const MyString& s1, const MyString& s2);
+
+	// operator <=
+	friend int operator<=(const MyString& s1, const MyString& s2);
+
+	// operator >=
+	friend int operator>=(const MyString& s1, const MyString& s2);
+
+	// operator +=
+	MyString& operator+=(const MyString& rhs);
+
 
     private:
 
@@ -48,5 +72,8 @@ class MyString {
 
 	int len;
 };
+
+// operator+
+MyString operator+(const MyString& s1, const MyString& s2);
 
 #endif

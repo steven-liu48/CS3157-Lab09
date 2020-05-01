@@ -6,7 +6,6 @@
 [4] 5,copy constructor,a
 [5] 7,constructor,t
 [6] entering operator+
-
 [7] 8,default constructor,temp
 [8] 8,copy constructor,u1 from return temp
 [9] 8,destructor,temp
@@ -33,4 +32,5 @@ parameters are references to a and b, no temporary objects are
 constructed/deconstructed.
 
 (c)
-
+It allows an implementation to omit creating a temporary which is only used to initialize another object of the same type.
+Temporary objects are not created

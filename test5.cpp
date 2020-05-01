@@ -20,15 +20,19 @@ int main(){
 	MyString s("hello"); 
 	s += " world";
 	cout << s << endl;
-	/*
+
 	// test op+=() and op+()
 	MyString sp(" "); 
 	MyString period("."); 
 	MyString str;
-	str += "This" + sp + "should" + sp += "work" + sp + "without"
-	+= sp + "any" + sp + "memory" += sp + "leak"
+
+	str += "This" + sp + "should" + sp 
+	+= "work" + sp + "without"
+	+= sp + "any" + sp + "memory" 
+	+= sp + "leak"
 	+= period;
+
 	cout << str << endl;
-	*/
+	
 	return 0;
 }
