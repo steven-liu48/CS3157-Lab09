@@ -4,6 +4,7 @@
 #include <cassert>
 
 int main(){
+	// 2(a), <, >, ==, !=, <=, >=
 	cout << "2(a)" << endl;
 	MyString x("asdfds");
 	MyString y("bfdsafd");
@@ -16,6 +17,7 @@ int main(){
 	assert((x<"asdfdt") == 1);
 	assert(("asdfdt"<x) == 0);
 	
+	// 2(b), op+= and op+
 	cout << "2(b)" << endl;
 	MyString s("hello"); 
 	s += " world";
